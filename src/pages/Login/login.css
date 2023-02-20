@@ -1,0 +1,156 @@
+.app {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border-radius: 8px; */
+  border-radius: 25px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: "all 0.3s ease";
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+@keyframes placeholderAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+input::placeholder {
+  font-size: 13px;
+  color: rgba(30, 68, 222, 0.773);
+  animation: placeholderAnim 2s ease-in-out infinite;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .login-form {
+    width: 90%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .login-form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .login-form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .login-form {
+    width: 40%;
+  }
+}
+
+
+.row{
+   display: flex;
+   flex-direction: column;
+    
+}
+
+.inputBox_login{
+  position: relative;
+}
+.inputBox_login input{
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #9d64ff;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1em;
+}
+.inputBox_login span{
+  position: absolute;
+  left: 1vh;
+  bottom: 1.5vh;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 0.8em;
+  transition: 0.65s;
+  
+}
+
+.inputBox_login input:valid ~ span, 
+.inputBox_login input:focus ~ span
+{
+  color: #9d64ff;
+  transform: translateX(10px) translateY(-27px);
+  font-size: 0.7em;
+  padding: 0 10px;
+  background: #ffffff;
+  border-left: 1px solid #9d64ff;
+  border-right: 1px solid #9d64ff;
+  
+}
+
+.btn_style_ {
+  width: auto;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}

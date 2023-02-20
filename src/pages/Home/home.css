@@ -1,0 +1,59 @@
+/* .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+.card {
+    width: 75%;
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+  
+  .card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-control {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: #4CAF50;
+    border-color: #ffffff;
+    
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ff0000;
+    border-color: #ffffff;
+  }
+  
+  .table {
+    font-size: 14px;
+  }
+  
+  .table thead th {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #d9edf7;
+  }

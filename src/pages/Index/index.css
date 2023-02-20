@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+.container-index {
+  position: relative;
+  height: 100vh;
+}
+
+.bg-image-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-button, .register-button {
+  padding: 10px 20px;
+  margin: 0 2vh;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0495fb;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #5244bb;
+  transform: scale(1.2);
+}
+
+.title-container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-index1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-header-index1 {
+  border-bottom: 3px solid #FFFFFF;
+  padding: 1rem 1.2rem;
+  margin: 18vh auto 1vh auto;
+}

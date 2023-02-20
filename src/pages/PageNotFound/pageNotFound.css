@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .not-found-text {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+  }
+  
